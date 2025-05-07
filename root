@@ -1,6 +1,90 @@
-git clone https://github.com/deinname/deinname.github.io
-cd deinname.github.io
+git clone https://github.com/vyiix/vyiix.github.io
+cd vyiix.github.io
 # HTML/CSS/JS-Dateien in diesen Ordner kopieren
 git add .
 git commit -m "Website hochgeladen"
 git push origin main
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mein Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.3/dist/cdn.min.js" defer></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+  <!-- Navbar -->
+  <header class="bg-black bg-opacity-50 fixed w-full z-10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="text-xl font-bold">Mein Portfolio</div>
+        <div class="hidden md:flex space-x-4">
+          <a href="#about" class="hover:text-teal-300 transition">Über mich</a>
+          <a href="#projects" class="hover:text-teal-300 transition">Projekte</a>
+          <a href="#contact" class="hover:text-teal-300 transition">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center text-center px-4">
+    <div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">Willkommen in meinem Portfolio</h1>
+      <p class="text-xl text-gray-300">Ich bin Webdesigner & Entwickler aus Leidenschaft.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-900 bg-opacity-70">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-6">Über mich</h2>
+      <p class="text-gray-300">Ich bin ein kreativer Entwickler, der sich im Bereich Backend sowie Frontend beschäftigt. Zudem bearbeite ich Kleidung sowie Fahrzeugskins.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-semibold text-center mb-12">Projekte</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition transform">
+          <h3 class="text-2xl font-bold mb-2">Hamburg Roleplay V3 </h3>
+          <p class="text-gray-400">Ich habe bei diesem Projekt viel mit dem Backend und Frontend zu tun gehabt und dabei geholfen, den Server wieder zum Laufen zu bringen.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition transform">
+          <h3 class="text-2xl font-bold mb-2">Deutschland Netzwerk</h3>
+          <p class="text-gray-400">In diesem Projekt habe ich mich intensiv mit dem Design beschäftigt. Ich habe nicht nur Kleidung gestaltet, sondern auch Fahrzeugskins entworfen. Zudem habe ich beschädigte Handlings überarbeitet und optimiert.</p>
+        </div>
+        <!-- Weitere Projekt-Karten -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt Section -->
+  <section id="Kontakt" class="py-20 bg-gray-900 bg-opacity-70">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-6">Kontakt</h2>
+      <p class="text-gray-300 mb-4">Du möchtest mit mir arbeiten? Schreib mir eine Nachricht!</p>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 rounded bg-gray-700 text-white" required>
+        <input type="E-mail" placeholder="Deine E-mail" class="w-full p-3 rounded bg-gray-700 text-white" required>
+        <textarea placeholder="Schreib mir einfach für Anliegen oder ähnliches." class="w-full p-3 rounded bg-gray-700 text-white" rows="5" required></textarea>
+        <button class="px-6 py-3 bg-teal-500 hover:bg-teal-400 text-white font-semibold rounded">Absenden</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-black bg-opacity-50">
+    <p class="text-gray-400">&copy; 2025 vyiix / Marcel. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
